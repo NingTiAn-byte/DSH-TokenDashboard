@@ -17,7 +17,7 @@ https://github.com/NingTiAn-byte/DSH-TokenDashboard
 
 ### 安装命令
 ```sh
-dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
+dsh plugin --profile web add @ningtian-byte/dsh-tokendashboard
 ```
 
 ### 兼容与运行要求

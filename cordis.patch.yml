@@ -1,4 +1,4 @@
 - insert:
     - id: local-traffic-monitor
-      name: "dsh-tokendashboard"
+      name: "@ningtian-byte/dsh-tokendashboard"
       config: {}

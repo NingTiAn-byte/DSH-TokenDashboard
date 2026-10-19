@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: "dsh-tokendashboard",
+  id: "@ningtian-byte/dsh-tokendashboard",
   factory(require) {
     const React = require("react");
     const h = React.createElement;

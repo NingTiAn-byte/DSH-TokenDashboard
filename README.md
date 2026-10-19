@@ -42,18 +42,18 @@ See how much you use across sessions, which projects drive token consumption, an
 
 ## Quick start
 
-### 1. Install from GitHub
+### 1. Install from npm
 
 Use the DSH CLI available in your installation:
 
 ```sh
-dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
+dsh plugin --profile web add @ningtian-byte/dsh-tokendashboard
 ```
 
-The planned npm package name is `dsh-tokendashboard`; publication is pending. After it has been published, install it with:
+Alternatively, install directly from GitHub:
 
 ```sh
-dsh plugin --profile web add dsh-tokendashboard
+dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
 ```
 
 ### 2. Desktop or local installation

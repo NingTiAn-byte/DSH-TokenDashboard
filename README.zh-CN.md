@@ -42,18 +42,18 @@ _预览使用示例数据，插件界面会跟随 DSH 的主题。_
 
 ## 快速开始
 
-### 1. 从 GitHub 安装
+### 1. 从 npm 安装
 
 使用安装环境提供的 DSH CLI：
 
 ```sh
-dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
+dsh plugin --profile web add @ningtian-byte/dsh-tokendashboard
 ```
 
-本仓库拟使用 npm 包名 `dsh-tokendashboard`，目前尚待发布。发布成功后可使用：
+也可以直接从 GitHub 安装：
 
 ```sh
-dsh plugin --profile web add dsh-tokendashboard
+dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
 ```
 
 ### 2. Desktop 或本地安装

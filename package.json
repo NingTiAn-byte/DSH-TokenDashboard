@@ -1,5 +1,5 @@
 {
-  "name": "dsh-tokendashboard",
+  "name": "@ningtian-byte/dsh-tokendashboard",
   "version": "1.0.0",
   "type": "module",
   "description": "A local-first token usage and API call dashboard for DeepSeek Harness",
