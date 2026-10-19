@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage statistics",
+    "description": "Monitor local session tokens, requests, cache hits, activity, and usage by model and project."
+  }
+}

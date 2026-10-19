@@ -1,0 +1,18 @@
+# Dependencies and package archives
+node_modules/
+*.tgz
+
+# Local tools and generated output
+.test/
+coverage/
+*.log
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

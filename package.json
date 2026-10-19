@@ -1,0 +1,51 @@
+{
+  "name": "@local/dsh-traffic-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first token usage and API call dashboard for DeepSeek Harness",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "usage.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "docs/images/*.png"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check usage.js && node --check client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "token-monitor",
+    "token-usage",
+    "api-calls",
+    "cache"
+  ]
+}
