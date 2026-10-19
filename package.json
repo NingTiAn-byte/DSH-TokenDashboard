@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-traffic-monitor",
+  "name": "dsh-tokendashboard",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "A local-first token usage and API call dashboard for DeepSeek Harness",
   "license": "MIT",
@@ -21,10 +20,12 @@
     "README.md",
     "README.zh-CN.md",
     "LICENSE",
-    "docs/images/*.png"
+    "docs/images/*.png",
+    "docs/PUBLISHING.md"
   ],
   "scripts": {
-    "check": "node --check index.js && node --check usage.js && node --check client.js"
+    "check": "node --check index.js && node --check usage.js && node --check client.js",
+    "prepublishOnly": "npm run check"
   },
   "dsh": {
     "bundle": {
@@ -46,6 +47,19 @@
     "token-monitor",
     "token-usage",
     "api-calls",
-    "cache"
-  ]
+    "cache",
+    "dsh-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NingTiAn-byte/DSH-TokenDashboard.git"
+  },
+  "homepage": "https://github.com/NingTiAn-byte/DSH-TokenDashboard#readme",
+  "bugs": {
+    "url": "https://github.com/NingTiAn-byte/DSH-TokenDashboard/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

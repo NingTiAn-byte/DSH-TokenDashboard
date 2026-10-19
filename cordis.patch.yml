@@ -1,4 +1,4 @@
 - insert:
     - id: local-traffic-monitor
-      name: "@local/dsh-traffic-monitor"
+      name: "dsh-tokendashboard"
       config: {}

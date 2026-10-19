@@ -1,6 +1,6 @@
 <div align="center">
 
-# DSH Token Monitor
+# DSH-TokenDashboard
 
 **在一个面板中查看本地 Token 消耗、API 调用和缓存使用情况。**
 
@@ -18,7 +18,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/overview-dark.png">
-  <img src="docs/images/overview-light.png" alt="DSH Token Monitor：Token 汇总、API 调用次数、活跃日历和每日缓存趋势">
+  <img src="docs/images/overview-light.png" alt="DSH-TokenDashboard：Token 汇总、API 调用次数、活跃日历和每日缓存趋势">
 </picture>
 
 _预览使用示例数据，插件界面会跟随 DSH 的主题。_
@@ -42,26 +42,35 @@ _预览使用示例数据，插件界面会跟随 DSH 的主题。_
 
 ## 快速开始
 
-### 1. 获取插件
+### 1. 从 GitHub 安装
 
-通过 GitHub 的 **Code → Download ZIP** 下载并解压。包含 `package.json` 的目录就是插件目录；如果本项目位于更大的仓库中，请选择其中的 `token-monitor` 子目录。
-
-### 2. 安装到 DSH
-
-在 DSH 插件管理器中安装本地插件目录，也可以使用安装环境提供的 DSH CLI：
+使用安装环境提供的 DSH CLI：
 
 ```sh
-# Web profile：请替换为插件的绝对路径。
-dsh plugin --profile web add /absolute/path/to/token-monitor
+dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
 ```
+
+本仓库拟使用 npm 包名 `dsh-tokendashboard`，目前尚待发布。发布成功后可使用：
+
+```sh
+dsh plugin --profile web add dsh-tokendashboard
+```
+
+### 2. Desktop 或本地安装
 
 Desktop 请使用桌面应用附带的 CLI：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/to/token-monitor
+dsh plugin --profile desktop add github:NingTiAn-byte/DSH-TokenDashboard
 ```
 
-Windows 路径也可以写为 `C:/plugins/token-monitor`，包含空格时请加引号。如果 `dsh` 不在 PATH 中，请使用实际安装的可执行文件或命令文件调用。源码 CLI 可能拒绝 Desktop profile；管理该 profile 时请使用桌面应用附带的 CLI。
+也可以通过 **Code → Download ZIP** 下载并解压，在插件管理器中选择包含 `package.json` 的目录，或执行：
+
+```sh
+dsh plugin --profile web add "/absolute/path/to/DSH-TokenDashboard"
+```
+
+Windows 路径可写为 `C:/plugins/DSH-TokenDashboard`，包含空格时请加引号。如果 `dsh` 不在 PATH 中，请使用实际安装的可执行文件或命令文件。源码 CLI 可能拒绝 Desktop profile；管理该 profile 时请使用桌面应用附带的 CLI。
 
 ### 3. 打开面板
 
@@ -144,3 +153,5 @@ npm pack --ignore-scripts
 ## 许可证
 
 [MIT](LICENSE)。本项目为社区插件，并非 DeepSeek 官方产品。
+
+维护者请参阅[发布与市场提交指南](docs/PUBLISHING.md)。

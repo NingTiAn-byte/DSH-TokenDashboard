@@ -1,6 +1,6 @@
 <div align="center">
 
-# DSH Token Monitor
+# DSH-TokenDashboard
 
 **Your local token usage, API calls, and cache activity in one dashboard.**
 
@@ -18,12 +18,12 @@ A lightweight plugin for DeepSeek Harness. No build step. No runtime dependencie
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/overview-dark.png">
-  <img src="docs/images/overview-light.png" alt="DSH Token Monitor showing token totals, API calls, an activity calendar, and daily cache trends">
+  <img src="docs/images/overview-light.png" alt="DSH-TokenDashboard showing token totals, API calls, an activity calendar, and daily cache trends">
 </picture>
 
 _Preview uses sample data. The plugin follows your DSH theme._
 
-## Why DSH Token Monitor?
+## Why DSH-TokenDashboard?
 
 See how much you use across sessions, which projects drive token consumption, and how often your input hits the cache. The dashboard reads existing session logs in your current DSH profile and presents the results inside the native sidebar.
 
@@ -42,26 +42,35 @@ See how much you use across sessions, which projects drive token consumption, an
 
 ## Quick start
 
-### 1. Get the plugin
+### 1. Install from GitHub
 
-Download this repository using **Code → Download ZIP**, then extract it. Use the directory containing `package.json` as the plugin directory. If this project sits inside a larger repository, select its `token-monitor` subdirectory.
-
-### 2. Install in DSH
-
-In the DSH plugin manager, install the local plugin directory. Alternatively, use the DSH CLI available in your installation:
+Use the DSH CLI available in your installation:
 
 ```sh
-# Web profile: replace the example with your plugin's absolute path.
-dsh plugin --profile web add /absolute/path/to/token-monitor
+dsh plugin --profile web add github:NingTiAn-byte/DSH-TokenDashboard
 ```
+
+The planned npm package name is `dsh-tokendashboard`; publication is pending. After it has been published, install it with:
+
+```sh
+dsh plugin --profile web add dsh-tokendashboard
+```
+
+### 2. Desktop or local installation
 
 For Desktop, use the CLI bundled with the Desktop application:
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/to/token-monitor
+dsh plugin --profile desktop add github:NingTiAn-byte/DSH-TokenDashboard
 ```
 
-On Windows, paths such as `C:/plugins/token-monitor` work as well. Quote paths that contain spaces. If `dsh` is not on your PATH, run the command through its installed executable or command file. The source CLI may reject the Desktop profile; use the Desktop-bundled CLI for that profile.
+Alternatively, download **Code → Download ZIP**, extract it, and install the directory containing `package.json` through the DSH plugin manager or CLI:
+
+```sh
+dsh plugin --profile web add "/absolute/path/to/DSH-TokenDashboard"
+```
+
+On Windows, paths such as `C:/plugins/DSH-TokenDashboard` work as well. Quote paths that contain spaces. If `dsh` is not on PATH, use its installed executable or command file. The source CLI may reject the Desktop profile; use the Desktop-bundled CLI for that profile.
 
 ### 3. Open the dashboard
 
@@ -161,3 +170,5 @@ Issues and pull requests are welcome. For a bug report, include your DSH version
 ## License
 
 [MIT](LICENSE). This is a community plugin and is not an official DeepSeek product.
+
+Maintainers: see [release and marketplace submission](docs/PUBLISHING.md).
